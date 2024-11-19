@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style2.css">
+  <!-- Include Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Include Font Awesome 5 -->
+
+
+  <style>
+    /* Adjust the size of the carousel container */
+    .owl-carousel {
+        width: 70%; /* Set your preferred width */
+        margin: auto; /* Center the carousel */
+        padding: 0,0,0,0;
+    }
+
+    /* Adjust the size of the images within the carousel */
+    .owl-carousel .item {
+        position: relative;
+    }
+
+    .owl-carousel .item img {
+        width: 100%; /* Make the images fill the container */
+        height: 450px; /* Set your preferred fixed height */
+        object-fit:cover; /* Ensure the aspect ratio is maintained */
+    }
+
+    .owl-carousel .item .text-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background to the text */
+        color: white;
+       
+        box-sizing: border-box;
+    }
+
+    /* Center the navigation arrows */
+    .owl-nav {
+        position: absolute;
+        top: 45%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+
+    .owl-nav button {
+        background: none;
+        border: none;
+        font-size: 24px;
+    }
+</style>
+</head>
+<body>
+
+
+  <header class="header">
+    <a class="w3-bar-item w3-hide-medium" href="index.html" style="padding-left: 0%; padding-top: 1%; padding-bottom: 0%;">
+      <img style="height: 45px; width: 100px; " src="resources/logo.png" alt="Sicopan">
+    </a>
+
+      <input type="checkbox" id="check" />
+      <label for="check" class="icons">
+         <i class="bx bx-menu" id="menu-icon"></i>
+         <i class="bx bx-x" id="close-icon"></i>
+      </label>
+
+    
+  </header>
+
+
+    <div class="bgimg-1" style="padding-bottom: 0%; ">
+      <div class="caption" style="padding-left: 1%; padding-bottom: 0%;">
+        <span class="borders " style="padding-left: 0%;"><span class="auto-input" style="padding-left: 0%;  font-size: 7.25vw;  font-stretch: extra-condensed;font-weight: bolder;   font-family: fantasy"></span>
+        <br>        
+        <span class="borders " style="padding-left: 0%;"><span class="auto-input2" style="padding-left: 0%;  font-size: 5.25vw;  font-stretch: extra-condensed;font-weight: bolder;   font-family: fantasy"></span>
+        </span>
+        
+        
+      </div>
+    </div>
+
+<!--HERE WE WILL SPLI THE SCREEN IN HALF< HALF MY PHOTO HALF MY DESCRIPTION    -->
+
+
+
+
+
+<div style="position: relative; padding-top: 0%;">
+  <div class="sections">
+    <h3 style="text-align:center; font-size:4vh;"></h3>
+    <p style="font-size: 3.5vh; padding-left: 15%;padding-right: 15%;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">  Your actions speak louder than words. In every gesture, you show understanding. We appreciate you for doing your best to meet the unique needs of your neurodivergent loved ones. We know how challenging it can all be when it comes to taking good care of someone, and that is why we want to help by providing you with articles, real stories and questions, a routine planning resource and the opportunity to speak to professional help. Browse, learn and better yourself and your relationships with your loved ones. 
+    </p>
+
+    </div>
+</div>
+
+
+
+
+
+
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="borders" style="background-color:transparent;font-size:25px;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div class="row g-0">
+  <div class="col-12 col-md-6 g-0 p-0">
+    <div class="leftside " style="padding-top: 10%;padding-bottom: 10%;">
+      <!-- Content for the left side -->
+      <h1 class="text-center" style="font-size: 5vh;"> What do caregivers do? </h1>
+      <p style="font-size: 2.5vh; padding-left: 5%; padding-top: 5%; padding-right: 5%; text-align:justify ;">Caregivers of neurodivergent individuals play a vital role in offering support, understanding and advocacy. Their work involves assisting with daily tasks, advocating for opportunities and fostering an inclusive environment. Beyond providing practical help, caregivers serve as emotional anchors, offering unwavering support to their loved ones. This role requires continuous learning about neurodiversity, staying informed about available resources and actively participating in community networks. Caregivers contribute significantly to creating a more compassionate and inclusive world for neurodivergent individuals, embodying the values of empathy, resilience, and advocacy</p>
+
+    </div>
+  </div>
+  <div class="col-12 col-md-6 g-0 p-0 ">
+    <div class="rightside" style="background-image: url('resources/nice.jpg');" >
+      <!-- Content for the right side -->
+      
+    </div>
+  </div>
+
+
+  
+  
+</div>
+
+
+
+<!-- HERE WE WILL TALK ABOUT MY PROJECT AND HAVE DIFFERENT PAGE FOR PHOTOS AND OTHER STUFF-->
+<div style="position:relative;">
+  <div class="sections">
+
+    <div class="card-container">
+      <div class="card">
+        <button class="slide" id="openModalBtn1" onclick="openModal('myModal1')">Questions and Answers</button>
+      </div>
+      <div class="card">
+        <button class="slide" id="openModalBtn2" onclick="openModal('myModal2')">Planner</button>
+      </div>
+      <div class="card">
+        <button class="slide" id="openModalBtn3" onclick="openModal('myModal3')">Talk to an expert</button>
+      </div>
+      <div class="card">
+        <button class="slide" id="openModalBtn4" onclick="openModal('myModal4')">Resources</button>
+      </div>
+    </div>
+    
+
+    <div class="modal-container" id="myModal1">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('myModal1')">&times;</span>
+        <h2>Questions and Answers</h2>
+
+        <div class="faq-container">
+          <div class="faq-question" onclick="toggleAnswer('q1')">How can I create a supportive and accommodating environment at home?</div>
+          <div class="faq-answer" id="q1">Learn about your child's neurodivergence and specific needs.
+            Establish predictable routines and create sensory-friendly spaces.
+            Minimize sensory overload by adjusting lighting and noise levels.
+            Provide clear communication using visual supports and choices.
+            Encourage interests, seek professional guidance, and be patient and flexible as you adapt to your child's unique requirements.</div>
+      
+          <div class="faq-question" onclick="toggleAnswer('q2')">How can I support positive social interactions for my loved one?</div>
+          <div class="faq-answer" id="q2">Encourage shared interests for common ground.
+            Practice active listening to foster connections.
+            Promote inclusivity and celebrate differences.
+            Provide guidance on social skills and empathy.
+            Arrange social opportunities aligned with their interests.</div>
+
+          <div class="faq-question" onclick="toggleAnswer('q3')">How important is routine and structure for a neurodivergent person, and how can I help establish and maintain it?
+          </div>
+          <div class="faq-answer" id="q3">Routine and structure are crucial for many neurodivergent individuals, providing predictability and reducing anxiety. You can help by creating a consistent daily schedule, using visual aids like calendars or charts, and gradually introducing changes when necessary. Offer clear communication and transition warnings to maintain stability and support their sense of control.
+
+
+
+
+
+          </div>
+          <!-- Add more questions and answers as needed -->
+      
+        </div>
+        <div id="qaForm">
+          <form id="questionForm">
+            <label for="question">Didn't find yours? Submit it anonymously and have it answered by one of our professional collaborators. 
+            </label>
+            <textarea id="question" name="question" rows="4" required></textarea>
+      
+            
+      
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="modal-container" id="myModal2">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('myModal2')">&times;</span>
+        <h2 style="align-self: center; padding-top: 2%;">Plan the best routine for your loved one here.</h2>
+        <p></p>
+        <p>
+          Establishing a routine can be a powerful tool for people with neurodivergence. Just like how a daily planner helps organize tasks, a routine brings a sense of order and predictability to each day. It acts like a reliable roadmap, offering comfort and reducing uncertainty in a sometimes overwhelming world. Here, you can create and keep a routine that works for your loved one, making things easier.
+
+        </p>
+        </head>
+        <style>
+          table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+            align-self: center;
+          }
+          th, td {
+            border: 1px solid #000;
+            text-align: left;
+            padding: 8px;
+          }
+          th {
+            background-color: #000;
+          }
+
+          .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #addEntryForm {
+    width: 300px; /* Set the desired width for the form */
+  }
+
+  #addEntryForm label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  #addEntryForm input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  #addEntryForm input[type="submit"] {
+    width: 100%;
+  }
+          
+        </style>
+        <script src="scripts.js"></script> 
+        <table id="rutinaTable">
+          <thead>
+            <tr>
+              <th>Ora</th>
+              <th>Luni</th>
+              <th>Marti</th>
+              <th>Miercuri</th>
+              <th>Joi</th>
+              <th>Vineri</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <br><br>
+
+        <div class="form-container">
+
+        </div>
+        <h2>Add a new entry into the schedule: </h2>
+      <form id="addEntryForm">
+        <label for="Ora">Ora:</label>
+        <input type="text" id="Ora" name="Ora"><br><br>
+        <label for="Luni">Luni:</label>
+        <input type="text" id="Luni" name="Luni"><br><br>
+        <label for="Marti">Marti:</label>
+        <input type="text" id="Marti" name="Marti"><br><br>
+        <label for="Miercuri">Miercuri:</label>
+        <input type="text" id="Miercuri" name="Miercuri"><br><br>
+        <label for="Joi">Joi:</label>
+        <input type="text" id="Joi" name="Joi"><br><br>
+        <label for="Vineri">Vineri:</label>
+        <input type="text" id="Vineri" name="Vineri"><br><br>
+        <input type="submit" value="Add Entry" onclick="refreshPage()">
+      </form>
+      </div>
+    </div>
+
+
+
+    
+
+    <div class="modal-container" id="myModal3">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('myModal3')">&times;</span>
+        <h1 style="align-self: center; padding-top: 2%;">Talk to an expert</h1>
+        <p></p>
+        <p>Start a chat with one of our certified specialists and collaborators. Ask for advice, further resources and support. We’re here for you.</p>
+        
+        
+        
+        <h4>Start typing...</h4>
+  <table id="Mesaj">
+    <thead>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <form id="Chat">
+    <input type="text" id="sent" name="sent"><br><br>
+    <input type="submit" value="Send message" onclick="refreshPage()">
+  </form>
+    <script>
+    function refreshPage() {
+      // Reloads the current page
+      location.reload();
+    }
+
+      //afisat tabel
+      fetch('/rutina')
+        .then(response => response.json())
+        .then(data => {
+          const rutinaTable = document.getElementById('rutinaTable').getElementsByTagName('tbody')[0];
+          data.forEach(item => {
+            const row = rutinaTable.insertRow();
+            const cell1 = row.insertCell(0);
+            const cell2 = row.insertCell(1);
+            const cell3 = row.insertCell(2);
+            const cell4 = row.insertCell(3);
+            const cell5 = row.insertCell(4);
+            const cell6 = row.insertCell(5);
+            cell1.textContent = item.Ora;
+            cell2.textContent = item.Luni;
+            cell3.textContent = item.Marti;
+            cell4.textContent = item.Miercuri;
+            cell5.textContent = item.Joi;
+            cell6.textContent = item.Vineri;
+            [cell1, cell2, cell3, cell4, cell5, cell6].forEach(cell => {
+            cell.addEventListener('click', () => {
+              const currentValue = cell.textContent;
+              const input = document.createElement('input');
+              input.value = currentValue;
+              input.addEventListener('blur', () => {
+                cell.textContent = input.value;
+                // Here you can handle sending the updated data to the server
+                // For example, using fetch to send a PUT request with the updated value
+              });
+              cell.textContent = '';
+              cell.appendChild(input);
+              input.focus();
+            });
+          });
+        });
+      });
+        fetch('/chat')
+        .then(response => response.json())
+        .then(data => {
+          const rutinaTable = document.getElementById('Mesaj').getElementsByTagName('tbody')[0];
+          data.forEach(item => {
+            const row = rutinaTable.insertRow();
+            const cell1 = row.insertCell(0);
+            cell1.textContent = item.Mesaj;
+          });
+        })
+        .catch(error => console.error('Error:', error));
+  
+        document.getElementById('addEntryForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+  
+        const formData = new FormData(this);
+        const Ora = formData.get('Ora');
+        const Luni = formData.get('Luni');
+        const Marti = formData.get('Marti');
+        const Miercuri = formData.get('Miercuri');
+        const Joi = formData.get('Joi');
+        const Vineri = formData.get('Vineri');
+  
+        fetch('/addRutina', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ Ora,Luni,Marti,Miercuri,Joi,Vineri })
+        })
+        .then(response => response.json())
+        .then(data => {
+          console.log('New entry added:', data);
+          // Optionally, update the table with the new data
+          // Fetch the data again and update the table
+        })
+        .catch(error => console.error('Error:', error));
+      });
+
+      document.getElementById('Chat').addEventListener('submit', function(event) {
+        event.preventDefault();
+  
+        const formData = new FormData(this);
+        const sent = formData.get('sent');
+  
+        fetch('/addchat', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({sent})
+        })
+        .then(response => response.json())
+        .then(data => {
+          console.log('New entry added:', data);
+          // Optionally, update the table with the new data
+          // Fetch the data again and update the table
+        })
+        .catch(error => console.error('Error:', error));
+      });
+    </script>
+      </div>
+    </div>
+
+
+
+    <div class="modal-container" id="myModal4">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('myModal4')">&times;</span>
+        <h2 style="align-self: center; padding-top: 2%;">Resources</h2>
+        <p></p>
+         <div>Real stories and articles are your best companions when trying to learn how to be better at taking care of your neurodivergent loved one. They offer practical tips, emotional support, and a shared understanding of the journey. Learn from those who've walked similar paths, and let their experiences guide and inspire you on this unique and meaningful adventure. Browse: 
+        </div>
+        
+            <br>
+       
+            <h3 style="align-self: center; color: antiquewhite; font-size: xx-large;">Articles</h3><br><br><br>
+        
+           
+          
+
+        <!-- Your content goes here -->
+    <div class="owl-carousel">
+      <div class="item">
+          <img src="resources/1.jpg" alt="Image 1">
+          <div class="text-overlay">How to be patient with Oliver Green</div>
+      </div>
+      <div class="item">
+          <img src="resources/2.jpg" alt="Image 2">
+          <div class="text-overlay">From Struggle to Strength: Parenting Through the Challenges of Neurodiversity</div>
+      </div>
+      <div class="item">
+          <img src="resources/3.jpg" alt="Image 3">
+          <div class="text-overlay">Strength in Diversity with the Smith's</div>
+      </div>
+      <!-- Add more items as needed -->
+  </div>
+
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- Include Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Your script goes here -->
+  <script>
+      $(document).ready(function(){
+          $('.owl-carousel').owlCarousel({
+              items: 1, // Number of items to display
+              loop: true, // Infinite loop
+              autoplay: true, // Autoplay the carousel
+              autoplayTimeout: 3000, // Autoplay interval in milliseconds
+              autoplayHoverPause: true, // Pause autoplay on hover
+              nav: true, // Show navigation arrows
+              navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"] // Custom navigation icons
+          });
+      });
+  </script>
+
+
+<h3 style="align-self: center; color: antiquewhite; font-size: xx-large;">Real stories</h3><br><br><br>
+<!-- Your content goes here -->
+<div class="owl-carousel">
+  <div class="item">
+      <img src="resources/fam.jpg" alt="Image 1">
+      <div class="text-overlay">Parenting Resilience: Overcoming Hurdles in Neurodivergent Family Dynamics</div>
+  </div>
+  <div class="item">
+      <img src="resources/fam2.jpg" alt="Image 2">
+      <div class="text-overlay">Unfiltered Realities: The Tough Choices and Triumphs of Parenting</div>
+  </div>
+  <div class="item">
+      <img src="resources/emp.jpg" alt="Image 3">
+      <div class="text-overlay">Facing the Unknown</div>
+  </div>
+  <!-- Add more items as needed -->
+</div>
+
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<!-- Include Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- Your script goes here -->
+<script>
+  $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+          items: 1, // Number of items to display
+          loop: true, // Infinite loop
+          autoplay: true, // Autoplay the carousel
+          autoplayTimeout: 3000, // Autoplay interval in milliseconds
+          autoplayHoverPause: true, // Pause autoplay on hover
+          nav: true, // Show navigation arrows
+          navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"] // Custom navigation icons
+      });
+  });
+</script>
+        
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<script>
+  function toggleAnswer(questionId) {
+    const answer = document.getElementById(questionId);
+    const question = document.querySelector(`.${questionId}`);
+
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+      question.classList.remove("active");
+    } else {
+      answer.style.display = "block";
+      question.classList.add("active");
+    }
+  }
+</script>
+
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed(".auto-input",{
+
+strings:["Caregivers, this is for you."],
+typeSpeed:20,
+backSoeed:20,
+loop:false
+
+
+
+})
+
+
+
+
+
+
+
+</script>
+
+<script>
+  function openModal(modalId) {
+    document.getElementById(modalId).style.display = 'flex';
+  }
+
+  function closeModal(modalId) {
+    document.getElementById(modalId).style.display = 'none';
+  }
+</script>
+
+</body>
+</html>

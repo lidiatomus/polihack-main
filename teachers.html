@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styleT.css">
+  <!-- Include Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Include Font Awesome 5 -->
+
+
+ <!-- Include Owl Carousel CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Include Font Awesome 5 -->
+
+
+ <style>
+   /* Adjust the size of the carousel container */
+   .owl-carousel {
+       width: 70%; /* Set your preferred width */
+       margin: auto; /* Center the carousel */
+       padding: 0,0,0,0;
+   }
+
+   /* Adjust the size of the images within the carousel */
+   .owl-carousel .item {
+       position: relative;
+   }
+
+   .owl-carousel .item img {
+       width: 100%; /* Make the images fill the container */
+       height: 450px; /* Set your preferred fixed height */
+       object-fit:cover; /* Ensure the aspect ratio is maintained */
+   }
+
+   .owl-carousel .item .text-overlay {
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       width: 100%;
+       background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background to the text */
+       color: white;
+      
+       box-sizing: border-box;
+   }
+
+   /* Center the navigation arrows */
+   .owl-nav {
+       position: absolute;
+       top: 45%;
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+       transform: translateY(-50%);
+   }
+
+   .owl-nav button {
+       background: none;
+       border: none;
+       font-size: 24px;
+   }
+</style>
+
+<style>
+  
+
+  .course {
+      margin-bottom: 20px;
+  }
+ 
+
+        .course button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #2c972e;
+            width: 300px;
+            height: 60px;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            align-self: center;
+        }
+
+  label {
+      display: block;
+      margin-bottom: 5px;
+  }
+
+  input[type="radio"] {
+      margin-right: 5px;
+  }
+
+  #quiz-form {
+      margin-top: 20px;
+      display: none; /* Quiz form initially hidden */
+  }
+
+  #submit-btn {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      width: 300;
+      height: 100;
+  }
+</style>
+</head>
+<body>
+
+
+  <header class="header">
+    <a class="w3-bar-item w3-hide-medium" href="index.html" style="padding-left: 0%; padding-top: 1%; padding-bottom: 0%;">
+      <img style="height: 45px; width: 100px; " src="resources/logo.png" alt="Sicopan">
+    </a>
+
+      <input type="checkbox" id="check" />
+      <label for="check" class="icons">
+         <i class="bx bx-menu" id="menu-icon"></i>
+         <i class="bx bx-x" id="close-icon"></i>
+      </label>
+
+    
+  </header>
+
+
+    <div class="bgimg-1" style="padding-bottom: 0%; ">
+      <div class="caption" style="padding-left: 1%; padding-bottom: 0%;">
+        <span class="borders " style="padding-left: 0%;"><span class="auto-input" style="padding-left: 0%;  font-size: 4.25vw;  font-stretch: extra-condensed;font-weight: bolder;   font-family: fantasy"></span>
+        <br>        
+        <span class="borders " style="padding-left: 0%;"><span class="auto-input2" style="padding-left: 0%;  font-size: 5.25vw;  font-stretch: extra-condensed;font-weight: bolder;   font-family: fantasy"></span>
+        </span>
+        
+        
+      </div>
+    </div>
+
+<!--HERE WE WILL SPLI THE SCREEN IN HALF< HALF MY PHOTO HALF MY DESCRIPTION    -->
+
+
+
+
+
+<div style="position: relative; padding-top: 0%;">
+  <div class="sections">
+    <h3 style="text-align:center; font-size:4vh;"></h3>
+    <p style="font-size: 3.5vh; padding-left: 15%;padding-right: 15%;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">  Your dedication to supporting neurodivergent students is truly commendable. Navigating the unique challenges requires patience, empathy, and a special kind of understanding. Your unwavering commitment to creating an inclusive and supportive learning environment does not go unnoticed. Thank you for being champions of education and advocates for every student's unique journey. It’s no easy job, so we want to help by providing quality resources, courses and professional help from our collaborators. Browse and gain a better understanding of the way neurodivergent students think and act. 
+    </p>
+
+    </div>
+</div>
+
+
+
+
+
+
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="borders" style="background-color:transparent;font-size:25px;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div class="row g-0">
+  <div class="col-12 col-md-6 g-0 p-0">
+    <div class="leftside " style="padding-top: 10%;padding-bottom: 10%;">
+      <!-- Content for the left side -->
+      <h1 class="text-center" style="font-size: 5vh;"> Teaching neurodivergent students</h1>
+      <p class="text-justify " style="font-size: 2.5vh; padding-left: 5%; padding-top: 5%; padding-right: 5%; text-align: justify;">Teaching neurodivergent students offers teachers a myriad of benefits, enriching their professional growth and classroom dynamics. Educators gain a profound understanding of diverse learning styles, allowing for tailored lessons that benefit all students. This experience cultivates creativity as teachers explore innovative teaching methods and adapt to various communication preferences, fostering a more inclusive and dynamic learning environment. The process nurtures empathy and patience, contributing to a supportive classroom culture. Continuous engagement in training and collaboration with specialists sharpens teaching strategies, while neurodivergent students bring unique perspectives that enrich classroom discussions.</p>
+
+    </div>
+  </div>
+  <div class="col-12 col-md-6 g-0 p-0 ">
+    <div class="rightside" style="background-image: url('resources/teach.jpg');" >
+      <!-- Content for the right side -->
+      
+    </div>
+  </div>
+
+
+  
+  
+</div>
+
+
+
+<!-- HERE WE WILL TALK ABOUT MY PROJECT AND HAVE DIFFERENT PAGE FOR PHOTOS AND OTHER STUFF-->
+<div style="position:relative;">
+  <div class="sections">
+
+    <div class="card-container">
+      <div class="card">
+        <button class="slide" id="openModalBtn1" onclick="openModal('myModal1')">Questions and Answers</button>
+      </div>
+      <div class="card">
+        <button class="slide" id="openModalBtn2" onclick="openModal('myModal2')">Courses</button>
+      </div>
+      <div class="card">
+        <button class="slide" id="openModalBtn3" onclick="openModal('myModal3')">Talk to an expert</button>
+      </div>
+      <div class="card">
+        <button class="slide" id="openModalBtn4" onclick="openModal('myModal4')">Resources</button>
+      </div>
+    </div>
+    
+
+    <div class="modal-container" id="myModal1">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('myModal1')">&times;</span>
+        <h2>Questions and Answers</h2>
+
+        <div class="faq-container">
+          <div class="faq-question" onclick="toggleAnswer('q1')">How can teachers create an inclusive classroom environment for neurodivergent students?</div>
+          <div class="faq-answer" id="q1">Teachers can create inclusivity by understanding diverse learning needs, implementing flexible teaching strategies, providing clear communication, offering sensory-friendly spaces, and fostering a supportive peer environment.</div>
+      
+          <div class="faq-question" onclick="toggleAnswer('q2')">What resources and support can teachers utilize to address the unique challenges of neurodivergent students?</div>
+          <div class="faq-answer" id="q2">Teachers can access resources such as specialized training programs, educational materials tailored to different learning styles, collaboration with special education professionals, and involvement in professional development opportunities focused on neurodiversity.</div>
+
+          <div class="faq-question" onclick="toggleAnswer('q3')">How can teachers effectively communicate with neurodivergent students and their parents or caregivers?</div>
+          <div class="faq-answer" id="q3">Effective communication involves using clear and concise language, employing visual aids and schedules, maintaining open lines of communication with parents or caregivers, and implementing communication methods that accommodate diverse needs, such as written or visual communication tools.</div>
+
+          <div class="faq-question" onclick="toggleAnswer('q4')">What strategies can teachers employ to address sensory sensitivities in the classroom?</div>
+          <div class="faq-answer" id="q4">Teachers can create a sensory-friendly environment by minimizing visual and auditory distractions, providing sensory breaks, offering alternative seating options, and collaborating with occupational therapists to implement sensory-friendly classroom designs.</div>
+
+          <div class="faq-question" onclick="toggleAnswer('q5')">How can teachers support the social and emotional well-being of neurodivergent students in the classroom?</div>
+          <div class="faq-answer" id="q5">Teachers can support social and emotional well-being by promoting positive peer interactions, implementing social skills training, fostering a culture of empathy and understanding, and collaborating with mental health professionals when needed. Additionally, creating a predictable routine and recognizing individual strengths contribute to a supportive classroom environment.</div>
+      
+          <!-- Add more questions and answers as needed -->
+      
+        </div>
+        <div id="qaForm">
+          <form id="questionForm">
+            <label for="question">Didn't find yours? Submit it anonymously and have it answered by one of our professional collaborators.</label>
+            <textarea id="question" name="question" rows="4" required></textarea>
+      
+            
+      
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="modal-container" id="myModal2">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('myModal2')">&times;</span>
+        <h2>Understanding Neurodivergent Pupils</h2>
+
+        <div class="course">
+          <h3>Course 1: Introduction to Neurodiversity</h3>
+          <p>This course provides an introduction to neurodiversity and understanding neurodivergent pupils.</p>
+          <button onclick="window.location.href='https://theeducationhub.org.nz/wp-content/uploads/2023/07/An-introduction-to-neurodiversity-and-neurodivergence_ECE.pdf'">Go to Course Website</button>
+      </div>
+  
+      <div class="course">
+          <h3>Course 2: Supporting Neurodivergent Learners</h3>
+          <p>Explore strategies and best practices for supporting neurodivergent pupils in the learning environment.</p>
+          <button onclick="window.location.href='https://cognassist.com/wp-content/uploads/2021/02/How-to-support-Neurodiverse-learners-Handbook.pdf'">Go to Course Website</button>
+      </div>
+  
+      <div class="course">
+          <h3>Course 3: Creating Inclusive Classrooms</h3>
+          <p>Learn how to create inclusive classrooms that accommodate the diverse needs of neurodivergent students.</p>
+          <button onclick="window.location.href='https://www.uvu.edu/otl/docs/inclusion_tips_and_strategies_to_create_an_inclusive_classroom.pdf'">Go to Course Website</button>
+      </div>
+
+    <h2>Quiz</h2>
+
+    <select id="quiz-dropdown" onchange="toggleQuiz()">
+      <option value="">Select</option>
+      <option value="quiz-form">Introduction to Neurodiversity Quiz</option>
+      <option value="quiz-form-2">Supporting Neurodivergent Learners Quiz</option>
+      <option value="quiz-form-3">Creating Inclusive Classrooms Quiz</option>
+  </select>
+
+  <form id="quiz-form" class="quiz-form">
+    <p>1. What is neurodiversity?</p>
+    <label><input type="radio" name="q1" value="a"> A medical condition</label>
+    <label><input type="radio" name="q1" value="b"> A concept that recognizes and celebrates neurological diversity</label>
+    <label><input type="radio" name="q1" value="c"> A learning disability</label>
+
+    <p>2. How can teachers support neurodivergent learners?</p>
+    <label><input type="radio" name="q2" value="a"> By ignoring their unique needs</label>
+    <label><input type="radio" name="q2" value="b"> By providing a one-size-fits-all approach</label>
+    <label><input type="radio" name="q2" value="c"> By implementing inclusive teaching practices</label>
+
+    <p>3. What is the goal of creating inclusive classrooms?</p>
+    <label><input type="radio" name="q3" value="a"> To exclude certain students</label>
+    <label><input type="radio" name="q3" value="b"> To make learning challenging for all students</label>
+    <label><input type="radio" name="q3" value="c"> To accommodate the diverse needs of all students</label>
+
+    <button type="button" id="submit-btn" onclick="submitQuiz()" style="height: 100px; width: 300px;">Submit Quiz</button>
+</form>
+
+<form id="quiz-form-2" class="quiz-form">
+  <p>1. What is the focus of this course?</p>
+  <label><input type="radio" name="q1" value="a"> Neurodiversity in the workplace</label>
+  <label><input type="radio" name="q1" value="b"> Supporting neurodivergent learners</label>
+  <label><input type="radio" name="q1" value="c"> Teaching traditional subjects</label>
+
+  <p>2. Which of the following is a strategy for supporting neurodivergent pupils?</p>
+  <label><input type="radio" name="q2" value="a"> Ignoring their unique needs</label>
+  <label><input type="radio" name="q2" value="b"> Providing a one-size-fits-all approach</label>
+  <label><input type="radio" name="q2" value="c"> Implementing inclusive teaching practices</label>
+
+  <p>3. Why is it important to support neurodivergent learners?</p>
+  <label><input type="radio" name="q3" value="a"> Because it's a trend in education</label>
+  <label><input type="radio" name="q3" value="b"> To create an inclusive learning environment</label>
+  <label><input type="radio" name="q3" value="c"> Because it's required by law</label>
+
+  <button type="button" id="submit-btn" onclick="submitQuiz()" style="height: 100px; width: 300px;">Submit Quiz</button>
+</form>
+
+<form id="quiz-form-3" class="quiz-form">
+  <p>1. What is the primary goal of creating inclusive classrooms?</p>
+  <label><input type="radio" name="q1" value="a"> To exclude certain students</label>
+  <label><input type="radio" name="q1" value="b"> To make learning challenging for all students</label>
+  <label><input type="radio" name="q1" value="c"> To accommodate the diverse needs of all students</label>
+
+  <p>2. Inclusive classrooms aim to:</p>
+  <label><input type="radio" name="q2" value="a"> Promote uniformity among students</label>
+  <label><input type="radio" name="q2" value="b"> Cater to the needs of all students, including those with disabilities</label>
+  <label><input type="radio" name="q2" value="c"> Isolate neurodivergent students</label>
+
+  <p>3. What is a key strategy for creating an inclusive classroom?</p>
+  <label><input type="radio" name="q3" value="a"> Ignoring the needs of neurodivergent students</label>
+  <label><input type="radio" name="q3" value="b"> Providing a one-size-fits-all approach</label>
+  <label><input type="radio" name="q3" value="c"> Implementing differentiated instruction and accommodations</label>
+
+  <button type="button" id="submit-btn" onclick="submitQuiz()" style="height: 100px; width: 300px;">Submit Quiz</button>
+</form>
+
+<script>
+  function toggleQuiz() {
+      var quizDropdown = document.getElementById("quiz-dropdown");
+      var quizForm = document.getElementById("quiz-form");
+      var quizForm2 = document.getElementById("quiz-form-2");
+      var quizForm3 = document.getElementById("quiz-form-3");
+
+      // Hide all quiz forms
+      quizForm.style.display = "none";
+      quizForm2.style.display = "none";
+      quizForm3.style.display = "none";
+
+      // Show the selected quiz form
+      if (quizDropdown.value === "quiz-form") {
+          quizForm.style.display = "block";
+      }
+      else if (quizDropdown.value === "quiz-form-2") {
+          quizForm2.style.display = "block";
+      }
+      else if (quizDropdown.value === "quiz-form-3") {
+          quizForm3.style.display = "block";
+      }
+  }
+
+  // Call toggleQuiz once to ensure no form is displayed on page load
+  toggleQuiz();
+
+  function submitQuiz() {
+      // You can implement the quiz scoring logic here
+      alert('Quiz submitted!');
+  }
+</script>
+      </div>
+    </div>
+
+
+
+    
+
+     <div class="modal-container" id="myModal3">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('myModal3')">&times;</span>
+        <h1 style="align-self: center; padding-top: 2%;">Talk to an expert</h1>
+        <p></p>
+        <p>Start a chat with one of our certified specialists and collaborators. Ask for advice, further resources and support. We’re here for you.</p>
+        
+        
+        
+        <h4>Start typing...</h4>
+        <table id="Mesaj">
+          <thead>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <form id="Chat">
+          <input type="text" id="sent" name="sent"><br><br>
+          <input type="submit" value="Send message" onclick="refreshPage()">
+        </form>
+    <script>
+ function refreshPage() {
+      // Reloads the current page
+      location.reload();
+    }
+        fetch('/chat')
+        .then(response => response.json())
+        .then(data => {
+          const rutinaTable = document.getElementById('Mesaj').getElementsByTagName('tbody')[0];
+          data.forEach(item => {
+            const row = rutinaTable.insertRow();
+            const cell1 = row.insertCell(0);
+            cell1.textContent = item.Mesaj;
+          });
+        })
+        .catch(error => console.error('Error:', error));
+
+      document.getElementById('Chat').addEventListener('submit', function(event) {
+        event.preventDefault();
+  
+        const formData = new FormData(this);
+        const sent = formData.get('sent');
+  
+        fetch('/addchat', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({sent})
+        })
+        .then(response => response.json())
+        .then(data => {
+          console.log('New entry added:', data);
+          // Optionally, update the table with the new data
+          // Fetch the data again and update the table
+        })
+        .catch(error => console.error('Error:', error));
+      });
+    </script>
+      </div>
+    </div>
+
+
+
+    <div class="modal-container" id="myModal4">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('myModal4')">&times;</span>
+        <h2 style="align-self: center; padding-top: 2%;">Resources</h2>
+        <p></p>
+         <div>Real stories and articles are your best companions when trying to learn how to be better at taking care of your neurodivergent loved one. They offer practical tips, emotional support, and a shared understanding of the journey. Learn from those who've walked similar paths, and let their experiences guide and inspire you on this unique and meaningful adventure. Browse: 
+        </div>
+        <h3 style="align-self: center; color: antiquewhite; font-size: xx-large;">Articles</h3><br><br><br>
+        
+           
+          
+
+        <!-- Your content goes here -->
+    <div class="owl-carousel">
+      <div class="item">
+          <img src="resources/fam.jpg" alt="Image 1">
+          <div class="text-overlay">Educator's Compassion: Navigating Challenges in Teaching Neurodivergent Students</div>
+      </div>
+      <div class="item">
+          <img src="resources/fam2.jpg" alt="Image 2">
+          <div class="text-overlay">Inspiring Impact: Stories of Dedication from Teachers</div>
+      </div>
+      <div class="item">
+          <img src="resources/emp.jpg" alt="Image 3">
+          <div class="text-overlay">Adapting Education: Teachers on the Frontlines of Neurodiversity</div>
+      </div>
+      <!-- Add more items as needed -->
+  </div>
+
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- Include Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Your script goes here -->
+  <script>
+      $(document).ready(function(){
+          $('.owl-carousel').owlCarousel({
+              items: 1, // Number of items to display
+              loop: true, // Infinite loop
+              autoplay: true, // Autoplay the carousel
+              autoplayTimeout: 3000, // Autoplay interval in milliseconds
+              autoplayHoverPause: true, // Pause autoplay on hover
+              nav: true, // Show navigation arrows
+              navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"] // Custom navigation icons
+          });
+      });
+  </script>
+
+
+<h3 style="align-self: center; color: antiquewhite; font-size: xx-large;">Real stories</h3><br><br><br>
+<!-- Your content goes here -->
+<div class="owl-carousel">
+  <div class="item">
+      <img src="resources/fam.jpg" alt="Image 1">
+      <div class="text-overlay">Beyond the Classroom Walls</div>
+  </div>
+  <div class="item">
+      <img src="resources/fam2.jpg" alt="Image 2">
+      <div class="text-overlay">Empathy in Education: Teachers Tackling Challenges in Neurodivergent Classrooms</div>
+  </div>
+  <div class="item">
+      <img src="resources/emp.jpg" alt="Image 3">
+      <div class="text-overlay">Teaching with Heart: The Triumphs and Trials of Educators</div>
+  </div>
+  <!-- Add more items as needed -->
+</div>
+
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<!-- Include Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- Your script goes here -->
+<script>
+  $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+          items: 1, // Number of items to display
+          loop: true, // Infinite loop
+          autoplay: true, // Autoplay the carousel
+          autoplayTimeout: 3000, // Autoplay interval in milliseconds
+          autoplayHoverPause: true, // Pause autoplay on hover
+          nav: true, // Show navigation arrows
+          navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"] // Custom navigation icons
+      });
+  });
+</script>
+        
+        
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+       
+        
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<script>
+  function toggleAnswer(questionId) {
+    const answer = document.getElementById(questionId);
+    const question = document.querySelector(`.${questionId}`);
+
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+      question.classList.remove("active");
+    } else {
+      answer.style.display = "block";
+      question.classList.add("active");
+    }
+  }
+</script>
+
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed(".auto-input",{
+
+strings:["Teachers, this one is dedicated to your extraordinary devotion!"],
+typeSpeed:20,
+backSoeed:20,
+loop:false
+
+
+
+})
+
+
+
+
+
+
+
+</script>
+
+<script>
+  function openModal(modalId) {
+    document.getElementById(modalId).style.display = 'flex';
+  }
+
+  function closeModal(modalId) {
+    document.getElementById(modalId).style.display = 'none';
+  }
+</script>
+
+</body>
+</html>
